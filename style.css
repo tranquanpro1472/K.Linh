@@ -1,0 +1,372 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* COMMON */
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+.pull-right {
+    float: right;
+}
+
+.center {
+    text-align:center!important ;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 32px 0 96px 0;
+    
+
+}
+
+.col {
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.btn {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 11px 16px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    
+}
+
+.btn:hover {
+    background: #ccc;
+    color: black;
+    border:none;
+}
+
+
+
+/* HEADER */
+#main {
+    
+}
+
+#header {
+    background-color: black;
+    height: 46px;
+    top:0;
+    left: 0;
+    right: 0;
+    position: fixed; 
+    z-index: 1;
+    overflow: hidden;
+    white-space: normal;
+    
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+} 
+
+#nav li {
+    position: relative;
+}
+#nav>li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#nav>li>a {
+    color: white;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 12px 24px;
+    display: block;
+    font-weight: bolder;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav .subnav {
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0 0 1px #000;
+}
+
+#nav .subnav a {
+    color: #000;
+}
+
+/* button header */
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    padding: 12px 24px;
+}
+
+#header .mobile-menu-btn:hover {
+    background: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color:#f44336;    
+}
+
+
+#header .menu-icon,
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+    
+/* SLIDER */
+#slider {
+    background: url('/assets/img/slider/new\ york.jpg') top center /cover no-repeat;
+    padding-top: 50%;
+    margin-top: 46px;
+}
+
+.text-slider {
+    padding-bottom:44px;
+    color: white;
+}
+.text-heading {
+    padding: 10px;
+}
+
+/* CONTENT */
+.content-selection {
+    margin: 10px 0;
+    padding: 64px 0; 
+    width: 800px;   
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 26px;
+    
+}
+/* band */
+.content-h2 {
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    
+}
+
+.sub-content {
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.description {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.image-mb {
+    width: 154px;
+    text-align: center;
+    border-radius: 360px;
+}
+/* tour-dates */
+
+.tour-black {
+    background-color: black;
+    
+}
+
+.ticket {
+    background-color: #fff;
+    list-style-type: none;
+    border-top: solid 1px #f44336;
+    margin-top: 47px;
+}
+
+.ticket-sell {
+    padding: 8px 16px;
+    border-bottom: solid 1px #f44336;
+    color: #757575;
+
+}
+
+.sold-out {
+    
+    background: #f44336;
+    color: #fff;
+    padding: 4px 9px;
+    margin: 22px;
+
+}
+.left {
+    background: black;
+    border-radius: 50%;
+    color: #fff;
+    padding: 1px 8px;
+    margin-right: 11px;
+
+}
+
+.place-pt {
+    width: 257px;
+    height: 100%;
+    display: block;
+    
+}
+
+.box-place {
+    background: white;
+    padding: 0px 16px;
+
+}
+
+.name-pl {
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+.time-place {
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+.sub {
+    padding-bottom: 15px;
+}
+
+.contact {
+    font-size: 18px;
+    
+}
+
+.ic {
+    width: 100%;
+    margin-right: 15px;
+}
+
+.control {
+    padding: 8px;
+    width: 100%;
+}
+
+.send-btn {
+    margin-top: 15px;
+    margin-right: 8px;
+}
+
+
+#map {
+    background: url('/assets/img/slider/map.jpg') top center /cover no-repeat;
+    padding-top: 50%;
+}
+/* FOOTER */
+#footer{
+    
+}
+
+.footer-div {
+    padding: 64px 0;
+    
+}
+
+.footer-ic {
+    font-size: 22px;
+    margin-bottom: 15px;
+   
+}
+
+.footer-ic0:hover {
+    opacity: 0.6;
+    color: royalblue;
+}
+
+.footer-ic1:hover {
+    color: salmon;
+}
+
+.footer-ic2:hover {
+    color: red
+}
+
+.footer-ic3:hover {
+    color: orange;
+}
+
+.footer-ic4:hover {
+    color:cadetblue;
+}
+
+.footer-ic5:hover {
+    color: #a70e03;
+}
+
+.footer-p {
+    opacity: 0.6;
+}
+
+.footer-p a {
+    color: black;
+}
+
+
+
+
+
